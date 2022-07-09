@@ -1,7 +1,8 @@
 name: SonarCloud Backend
 on:
   push:
-    branches: [ master, development ]
+    branches: 
+      - Testing
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
