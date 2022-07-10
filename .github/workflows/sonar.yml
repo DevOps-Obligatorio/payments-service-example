@@ -33,9 +33,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=DevOps-Obligatorio_payments-service-example
-
-        #run: mvn verify sonar:sonar \
-         # -Dsonar.host.url=https://sonarcloud.io \
-          #-Dsonar.organization=devops-obligatorio-ms \
-          #-Dsonar.projectKey=DevOps-Obligatorio_payments-service-example
+        run: mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=DevOps-Obligatorio_payments-service-example -Dsonar.organization=devops-obligatorio-ms
