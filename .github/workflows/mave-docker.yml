@@ -88,7 +88,7 @@ jobs:
        path: target/
 
   deploy:
-    name: Deploy
+    name: deploy
     needs: [build]
     runs-on: ubuntu-latest
 
